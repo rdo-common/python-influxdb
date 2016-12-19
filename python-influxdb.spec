@@ -2,7 +2,7 @@
 
 Name:           python-%{pypi_name}
 Version:        3.0.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        InfluxDB client
 
 License:        MIT
@@ -68,5 +68,8 @@ rm -rf %{pypi_name}.egg-info
 %{python3_sitelib}/%{pypi_name}-%{version}-py*egg-info
 
 %changelog
+* Mon Dec 19 2016 Miro Hrončok <mhroncok@redhat.com> - 3.0.0-2
+- Rebuild for Python 3.6
+
 * Wed Oct 05 2016 David Hannequin <david.hannequin@gmail.com> - 3.0.0-1
 - Initial package.

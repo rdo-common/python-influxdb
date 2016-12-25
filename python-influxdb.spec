@@ -1,8 +1,8 @@
 %global pypi_name influxdb
 
 Name:           python-%{pypi_name}
-Version:        3.0.0
-Release:        2%{?dist}
+Version:        4.0.0
+Release:        1%{?dist}
 Summary:        InfluxDB client
 
 License:        MIT
@@ -68,6 +68,15 @@ rm -rf %{pypi_name}.egg-info
 %{python3_sitelib}/%{pypi_name}-%{version}-py*egg-info
 
 %changelog
+* Sun Dec 25 2016 David Hannequin <david.hannequin@gmail.com> - 4.0.0-1
+- Update from uptsream,
+- Improvements in timezone handling,
+- Properly quote all identifiers and literals,
+- Removed get_list_servers,
+- Fixes in tutorial_server_data.py,
+- Added more data type examples to tutorial.py.
+
+
 * Mon Dec 19 2016 Miro Hrončok <mhroncok@redhat.com> - 3.0.0-2
 - Rebuild for Python 3.6
 

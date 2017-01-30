@@ -6,7 +6,7 @@
 
 Name:           python-%{pypi_name}
 Version:        4.0.0
-Release:        1%{?dist}
+Release:        1%{?dist}.1
 Summary:        InfluxDB client
 
 License:        MIT
@@ -30,7 +30,7 @@ Summary:        %{summary}
 %{?python_provide:%python_provide python2-%{pypi_name}}
  
 Requires:       python2-requests
-Requires:       python2-dateutil
+Requires:       python-dateutil
 Requires:       pytz
 Requires:       python-six
 
